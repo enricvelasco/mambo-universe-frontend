@@ -1,9 +1,12 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
+import { fonts } from '../config/fonts'
+import { colors } from '../config/colors'
+import { mediaQueries } from '../config/media-queries'
 
 export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: ${fonts.primaryFont};
   }
   
   *, *::before, *::after {
@@ -26,16 +29,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-          background: #fefefe;
+          background: ${colors.backgroundColor};
           height: 100vh;
           margin: 0 auto;
-          max-width: 500px;
-          overscroll-behavior: none;
+          max-width: 100%;
           width: 100%;
+          padding: 5px 5px 0;
+          ${mediaQueries.desktop} {
+            padding: 15px 15px 0;
+          }
   }
 
   #app {
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
           overflow-x: hidden;
           min-height: 100vh;
           padding-bottom: 10px;
