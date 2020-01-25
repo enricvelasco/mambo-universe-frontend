@@ -6,7 +6,7 @@ import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessC
 const Header = () => {
   const onClick = () => {
     console.log('ON CLICK')
-    createUserWithEmail('prueba@prueba.com', 'prueba')
+    createUserWithEmail('prueba@prueba2.com', 'prueba')
       .then((res) => console.log('RES:', res))
       .then((err) => console.log('ERR:', err))
   }
