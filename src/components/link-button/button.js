@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from './style'
 
-const LinkButton = ({ link = "/", children }) => (
-  <Link to={link}>
+const LinkButton = ({ link = "/", children, onClick }) => (
+  <Link to={link} onClick={onClick}>
     {children}
   </Link>
 );
