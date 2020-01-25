@@ -1,8 +1,16 @@
 import React from 'react';
 import LinkButton from '../link-button'
+import { createUserWithEmail } from '../../services/login'
 import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessContainer, Item } from './style'
 
-const Header = () => (
+const Header = () => {
+  const onClick = () => {
+    console.log('ON CLICK')
+    createUserWithEmail('prueba@prueba.com', 'prueba')
+      .then((res) => console.log('RES:', res))
+      .then((err) => console.log('ERR:', err))
+  }
+  return (
     <HeaderContainer>
       <LogoContainer>
         <Logo>Mambo Universe</Logo>
@@ -13,12 +21,13 @@ const Header = () => (
           <Item>Item 2</Item>
         </Menu>
         <UserAccessContainer>
-          <LinkButton>
+          <LinkButton onClick={onClick}>
             LogIn
           </LinkButton>
         </UserAccessContainer>
       </ItemsContainer>
     </HeaderContainer>
-);
+  );
+}
 
 export default Header;
