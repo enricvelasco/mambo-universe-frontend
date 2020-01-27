@@ -1,11 +1,11 @@
-import React from 'react';
-import Overlay from '../overlay';
-import { ModalClose, ModalContainer } from './styles';
+import React from 'react'
+import Overlay from '../overlay'
+import { ModalClose, ModalContainer } from './styles'
 
 const Layout = ({
   children,
   overlayClassName = '',
-  closeAction,
+  closeAction
 }) => (
   <Overlay className={overlayClassName}>
     <ModalContainer>
@@ -13,6 +13,6 @@ const Layout = ({
       {children}
     </ModalContainer>
   </Overlay>
-);
+)
 
-export default Layout;
+export default Layout

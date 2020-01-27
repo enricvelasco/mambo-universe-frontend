@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const OverlayContainer = styled.div`
   position: fixed;
@@ -7,4 +7,4 @@ export const OverlayContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   z-index: 30;
-`;
+`

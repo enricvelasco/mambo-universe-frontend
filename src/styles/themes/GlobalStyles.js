@@ -44,4 +44,4 @@ export const GlobalStyle = createGlobalStyle`
             padding: 15px 15px 0;
           }
   }
-`;
+`

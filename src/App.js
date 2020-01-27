@@ -11,6 +11,6 @@ const App = () => (
     <Home />
     <Footer />
   </Suspense>
-);
+)
 
 export default App

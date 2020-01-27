@@ -5,4 +5,4 @@ export const colors = {
   lightText: '#ffffff',
   darkText: '#363940',
   modalBackgroundColor: '#ffffff'
-};
+}

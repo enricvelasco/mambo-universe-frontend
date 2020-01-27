@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 import { colors } from '../../../styles/config/colors'
 import { mediaQueries } from '../../../styles/config/media-queries'
 
@@ -12,4 +12,4 @@ export const ModalRow = styled.div`
     width: 800px;
     height: 436px;
    }
-`;
+`
