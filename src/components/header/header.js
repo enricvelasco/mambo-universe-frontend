@@ -1,14 +1,12 @@
-import React from 'react';
+import React from 'react'
 import LinkButton from '../link-button'
-import { createUserWithEmail } from '../../services/login'
+import { createPortal } from '../modals/config/portals/actions'
 import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessContainer, Item } from './style'
+import { portalsIds } from '../modals/config/modals-list'
 
 const Header = () => {
   const onClick = () => {
-    console.log('ON CLICK')
-    createUserWithEmail('prueba@prueba2.com', 'prueba')
-      .then((res) => console.log('RES:', res))
-      .then((err) => console.log('ERR:', err))
+    createPortal(portalsIds.LOGIN)
   }
   return (
     <HeaderContainer>
@@ -27,7 +25,7 @@ const Header = () => {
         </UserAccessContainer>
       </ItemsContainer>
     </HeaderContainer>
-  );
+  )
 }
 
-export default Header;
+export default Header
