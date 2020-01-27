@@ -1,4 +1,4 @@
 export const fonts = {
-  primaryFont: '"Oswald", sans-serif',
+  primaryFont: '"Overpass", sans-serif',
   secondaryFont: '"Roboto", sans-serif',
 };
