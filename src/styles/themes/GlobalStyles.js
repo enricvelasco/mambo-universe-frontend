@@ -34,15 +34,14 @@ export const GlobalStyle = createGlobalStyle`
           margin: 0 auto;
           max-width: 100%;
           width: 100%;
-          padding: 5px 5px 0;
-          ${mediaQueries.desktop} {
-            padding: 15px 15px 0;
-          }
   }
 
   #app {
           overflow-x: hidden;
           min-height: 100vh;
-          padding-bottom: 10px;
+          padding: 5px 5px 0;
+          ${mediaQueries.desktop} {
+            padding: 15px 15px 0;
+          }
   }
 `;
