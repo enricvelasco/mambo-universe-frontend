@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import { portals } from '../modals-list'
+import { portals } from '../portals-list'
 import { hidePortalById } from './actions'
 
 const RenderPortal = ({ portal: { id, props }, Component }) => (
