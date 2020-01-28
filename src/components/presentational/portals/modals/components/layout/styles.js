@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Close from '../close'
-import { colors } from '../../../../../styles/config/colors'
+import { colors } from '../../../../../../styles/config/colors'
 
 export const ModalContainer = styled.div`
   width: fit-content;
