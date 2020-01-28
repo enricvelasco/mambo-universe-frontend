@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Portals from '../index'
+import Portals from '..'
 
 export const createPortal = (portalId) => {
   const html = <Portals id={portalId} />

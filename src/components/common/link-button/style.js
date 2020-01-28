@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from '@reach/router'
-import { colors } from '../../styles/config/colors'
+import { colors } from '../../../styles/config/colors'
 
 export const Link = styled(LinkRouter)`
   background-color: ${colors.backgroundDarkColor};

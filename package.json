@@ -7,7 +7,7 @@
     "build": "webpack",
     "lint": "standard",
     "fix-lint": "standard --fix",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

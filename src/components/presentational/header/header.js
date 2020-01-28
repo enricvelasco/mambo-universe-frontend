@@ -1,13 +1,8 @@
 import React from 'react'
-import LinkButton from '../link-button'
-import { createPortal } from '../modals/config/portals/actions'
+import LinkButton from '../../common/link-button'
 import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessContainer, Item } from './style'
-import { portalsIds } from '../modals/config/modals-list'
 
 const Header = () => {
-  const onClick = () => {
-    createPortal(portalsIds.LOGIN)
-  }
   return (
     <HeaderContainer>
       <LogoContainer>
@@ -19,7 +14,7 @@ const Header = () => {
           <Item>Item 2</Item>
         </Menu>
         <UserAccessContainer>
-          <LinkButton onClick={onClick}>
+          <LinkButton link='/login'>
             LogIn
           </LinkButton>
         </UserAccessContainer>
