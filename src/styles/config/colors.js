@@ -4,5 +4,10 @@ export const colors = {
   borderColor: '#F0F0F0',
   lightText: '#ffffff',
   darkText: '#363940',
-  modalBackgroundColor: '#ffffff'
+  modalBackgroundColor: '#ffffff',
+
+  inputBorderColorDefault: '#777777',
+  inputBackgroundColorDefault: '#eff0f1',
+  inputBackgroundColorFocus: '#ffffff',
+  inputTextColor: '#000000'
 }
