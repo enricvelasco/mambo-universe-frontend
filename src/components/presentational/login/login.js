@@ -1,6 +1,6 @@
 import React from 'react'
-import { createPortal } from '../portals/config/portals/actions'
-import { portalsIds } from '../portals/config/portals-list'
+import { createPortal } from '../../../application/portals/config/portals/actions'
+import { portalsIds } from '../../../application/portals/config/portals-list'
 
 const Login = () => {
   return (

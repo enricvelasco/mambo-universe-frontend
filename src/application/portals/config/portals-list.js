@@ -1,6 +1,6 @@
-import LoginModal from '../modals/login-modal'
-import SuccessAlert from '../alerts/success'
-import WarningAlert from '../alerts/warning'
+import LoginModal from '../../../components/presentational/modals/login-modal'
+import SuccessAlert from '../../../components/presentational/alerts/success'
+import WarningAlert from '../../../components/presentational/alerts/warning'
 
 export const portalsIds = {
   LOGIN: 'login-modal'

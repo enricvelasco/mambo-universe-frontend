@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { colors } from '../../../../../styles/config/colors'
-import { mediaQueries } from '../../../../../styles/config/media-queries'
+import { colors } from '../../../../styles/config/colors'
+import { mediaQueries } from '../../../../styles/config/media-queries'
 
 export const ModalRow = styled.div`
    position: relative;

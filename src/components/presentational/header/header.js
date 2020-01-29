@@ -1,7 +1,7 @@
 import React from 'react'
 import LinkButton from '../../common/link-button'
-import { createTopRightAlert, createBottomCenterAlert, createBottomLeftAlert, createBottomRightAlert, createCenterCenterAlert, createCenterLeftAlert, createCenterRightAlert, createTopCenterAlert, createTopLeftAlert } from '../portals/config/alerts/actions'
-import { alertsIds } from '../portals/config/portals-list'
+import { createTopRightAlert, createBottomCenterAlert, createBottomLeftAlert, createBottomRightAlert, createCenterCenterAlert, createCenterLeftAlert, createCenterRightAlert, createTopCenterAlert, createTopLeftAlert } from '../../../application/portals/config/alerts/actions'
+import { alertsIds } from '../../../application/portals/config/portals-list'
 import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessContainer, Item } from './style'
 
 const onItemClick = () => {
