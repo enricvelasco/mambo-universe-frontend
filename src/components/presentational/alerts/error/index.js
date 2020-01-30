@@ -1,7 +1,7 @@
 import React from 'react'
 import { AlertContainer } from './style'
 
-const SuccessAlert = ({ id, close }) => {
+const ErrorAlert = ({ id, close, text }) => {
   setTimeout(function () { close() }, 3000)
   const onClose = () => {
     close()
@@ -9,9 +9,9 @@ const SuccessAlert = ({ id, close }) => {
   return (
     <AlertContainer>
       <button onClick={onClose}>close</button>
-      SUCCESS
+      {text}
     </AlertContainer>
   )
 }
 
-export default SuccessAlert
+export default ErrorAlert

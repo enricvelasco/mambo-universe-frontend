@@ -6,4 +6,5 @@ export const AlertContainer = styled.ul`
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 10000;
 `

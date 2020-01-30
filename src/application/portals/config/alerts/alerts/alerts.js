@@ -8,6 +8,7 @@ const RenderAlert = ({ portal: { generatedId, props }, Component }) => (
 )
 
 const Alerts = ({ id, generatedId, ...props }) => {
+  console.log('entra en alerts', id, generatedId, props)
   return ReactDom.createPortal(
     <>
       <RenderAlert portal={{ generatedId, props }} Component={alerts.alert[id]} />

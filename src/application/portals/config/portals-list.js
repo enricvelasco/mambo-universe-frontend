@@ -1,6 +1,7 @@
 import LoginModal from '../../../components/presentational/modals/login-modal'
 import SuccessAlert from '../../../components/presentational/alerts/success'
 import WarningAlert from '../../../components/presentational/alerts/warning'
+import ErrorAlert from '../../../components/presentational/alerts/error'
 
 export const portalsIds = {
   LOGIN: 'login-modal'
@@ -8,7 +9,8 @@ export const portalsIds = {
 
 export const alertsIds = {
   SUCCESS: 'success-alert',
-  WARNING: 'warning-alert'
+  WARNING: 'warning-alert',
+  ERROR: 'error-alert'
 }
 
 export const portals = {
@@ -20,6 +22,7 @@ export const portals = {
 export const alerts = {
   alert: {
     [alertsIds.SUCCESS]: SuccessAlert,
-    [alertsIds.WARNING]: WarningAlert
+    [alertsIds.WARNING]: WarningAlert,
+    [alertsIds.ERROR]: ErrorAlert
   }
 }

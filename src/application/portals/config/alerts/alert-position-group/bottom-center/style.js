@@ -7,4 +7,5 @@ export const AlertContainer = styled.ul`
   bottom: 0;
   right: 50%;
   transform: translateX(50%);
+  z-index: 10000;
 `
