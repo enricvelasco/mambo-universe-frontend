@@ -1,5 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import App from './App'
+import Context from './Context'
 
-ReactDom.render(<App />, document.getElementById('app'))
+ReactDom.render(
+  <Context.Provider value={{ isAuth: false }}>
+    <App />
+  </Context.Provider>,
+  document.getElementById('app'))
