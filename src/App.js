@@ -6,11 +6,10 @@ import Header from './components/presentational/header'
 import Footer from './components/presentational/footer'
 import Login from './components/presentational/login'
 import NotFound from './scenes/not-found'
-import Context from './Context'
+import { Context } from './Context'
 
 const App = () => {
   const { isAuth } = useContext(Context)
-  console.log('IS AUTH', isAuth)
   return (
     <Suspense fallback={<div />}>
       <GlobalStyle />

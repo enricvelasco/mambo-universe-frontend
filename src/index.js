@@ -4,7 +4,7 @@ import App from './App'
 import Context from './Context'
 
 ReactDom.render(
-  <Context.Provider value={{ isAuth: false }}>
+  <Context.Provider>
     <App />
   </Context.Provider>,
   document.getElementById('app'))
