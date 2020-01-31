@@ -9,7 +9,7 @@ import SubmitButton from '../../../common/submit-button'
 import { createTopRightAlert } from '../../../../application/portals/config/alerts/actions'
 import { alertsIds } from '../../../../application/portals/config/portals-list'
 
-const LoginModal = ({ close }) => {
+const LoginModal = ({ close, onLogin }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -17,8 +17,9 @@ const LoginModal = ({ close }) => {
     event.preventDefault()
     sigInUserWithEmail(email, password)
       .then(() => {
-        createTopRightAlert(alertsIds.SUCCESS, { text: 'Logueado OK' })
         onClose()
+        createTopRightAlert(alertsIds.SUCCESS, { text: 'Logueado OK' })
+        onLogin()
       })
       .catch(err => {
         createTopRightAlert(alertsIds.ERROR, { text: err.code })

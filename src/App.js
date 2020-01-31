@@ -6,10 +6,12 @@ import Header from './components/presentational/header'
 import Footer from './components/presentational/footer'
 import Login from './components/presentational/login'
 import NotFound from './scenes/not-found'
+import Profile from './scenes/user-container/profile'
 import { Context } from './Context'
 
 const App = () => {
-  const { isAuth } = useContext(Context)
+  const { isAuth, updateAuth } = useContext(Context)
+
   return (
     <Suspense fallback={<div />}>
       <GlobalStyle />
@@ -17,7 +19,9 @@ const App = () => {
       <Router>
         <NotFound default />
         <Home path='/' />
-        <Login path='/login' />
+        { !isAuth && <Login path='/login' onLogin={() => updateAuth()}/> }
+        { !isAuth && <Redirect from='/profile' to='/' /> }
+        <Profile path='/profile' />
       </Router>
       <Footer />
     </Suspense>
