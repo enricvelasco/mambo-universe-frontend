@@ -45,4 +45,6 @@ export const Item = styled.div`
 export const UserAccessContainer = styled.div`
   width: 70px;
   justify-content: right;
+  align-items: center;
+  display: flex;
 `
