@@ -1,7 +1,6 @@
-import React  from 'react'
+import React from 'react'
 import HomeTitle from './components/title'
 import Container from '../../components/common/container'
-
 
 const Home = () => {
   return (

@@ -19,8 +19,8 @@ const App = () => {
       <Router>
         <NotFound default />
         <Home path='/' />
-        { !isAuth && <Login path='/login' onLogin={() => updateAuth()}/> }
-        { !isAuth && <Redirect from='/profile' to='/' /> }
+        {!isAuth && <Login path='/login' onLogin={() => updateAuth()} />}
+        {!isAuth && <Redirect from='/profile' to='/' />}
         <Profile path='/profile' />
       </Router>
       <Footer />

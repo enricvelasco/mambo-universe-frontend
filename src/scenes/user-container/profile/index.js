@@ -11,11 +11,11 @@ const Profile = () => {
   const onLogout = () => {
     signOut()
       .then(() => {
-        createTopRightAlert(alertsIds.SUCCESS, {text: 'sign out OK'})
+        createTopRightAlert(alertsIds.SUCCESS, { text: 'sign out OK' })
         updateAuth()
       })
       .catch((err) => {
-        createTopRightAlert(alertsIds.ERROR, {text: err.code})
+        createTopRightAlert(alertsIds.ERROR, { text: err.code })
       })
   }
   return (
@@ -23,7 +23,7 @@ const Profile = () => {
       PROFILE
       <button onClick={onLogout}>DICONNECT</button>
     </Container>
-  );
+  )
 }
 
-export default Profile;
+export default Profile

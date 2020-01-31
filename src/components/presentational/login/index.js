@@ -4,7 +4,7 @@ import { portalsIds } from '../../../application/portals/config/portals-list'
 
 const Login = ({ onLogin }) => (
   <>
-    {createPortal(portalsIds.LOGIN, {onLogin: onLogin})}
+    {createPortal(portalsIds.LOGIN, { onLogin: onLogin })}
   </>
 )
 

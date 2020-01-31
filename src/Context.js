@@ -24,7 +24,7 @@ const Provider = ({ children }) => {
     updateAuth: () => {
       console.log('ENTRA A UPDATE AUTH')
       userState()
-    },
+    }
   }
 
   return (
