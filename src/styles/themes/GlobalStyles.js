@@ -30,7 +30,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
           background: ${colors.backgroundColor};
-          height: 100vh;
+          min-height: 100vh;
+          height: 100%;
           margin: 0 auto;
           max-width: 100%;
           width: 100%;

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { signOut } from '../../../services/login'
-import { createTopRightAlert } from '../../../application/portals/config/alerts/actions'
-import { alertsIds } from '../../../application/portals/config/portals-list'
-import { Context } from '../../../Context'
-import Container from '../../../components/common/container'
+import { signOut } from '../../../../services/login'
+import { createTopRightAlert } from '../../../../application/portals/config/alerts/actions'
+import { alertsIds } from '../../../../application/portals/config/portals-list'
+import { Context } from '../../../../Context'
+import Container from '../../../../components/common/container'
 
 const Profile = () => {
   const { updateAuth } = useContext(Context)
@@ -19,10 +19,10 @@ const Profile = () => {
       })
   }
   return (
-    <Container>
+    <div>
       PROFILE
       <button onClick={onLogout}>DICONNECT</button>
-    </Container>
+    </div>
   )
 }
 

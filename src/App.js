@@ -6,8 +6,8 @@ import Header from './components/presentational/header'
 import Footer from './components/presentational/footer'
 import Login from './components/presentational/login'
 import NotFound from './scenes/not-found'
-import Profile from './scenes/user-container/profile'
 import { Context } from './Context'
+import UserContainer from './scenes/user-container'
 
 const App = () => {
   const { isAuth, updateAuth } = useContext(Context)
@@ -21,7 +21,7 @@ const App = () => {
         <Home path='/' />
         {!isAuth && <Login path='/login' onLogin={() => updateAuth()} />}
         {!isAuth && <Redirect from='/profile' to='/' />}
-        <Profile path='/profile' />
+        <UserContainer path='/profile' />
       </Router>
       <Footer />
     </Suspense>
