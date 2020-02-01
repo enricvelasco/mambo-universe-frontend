@@ -7,7 +7,7 @@ export const ModalRow = styled.div`
    position: relative;
    background-color: ${colors.modalBackgroundColor};
    width: 340px;
-   height: 626px;
+   height: 400px;
    margin: 0;
    border-radius: 2px;
    display: flex;
