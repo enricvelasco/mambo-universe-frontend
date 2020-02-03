@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import GenericContainer from '../../components/common/container'
 
-export const Container = styled(GenericContainer)`
+export const Content = styled.div`
   display: flex;
   flex-direction: row;
+  min-height: 500px;
 `
