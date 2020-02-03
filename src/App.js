@@ -30,13 +30,13 @@ const App = () => {
               <Home path='/' />
               {!isAuth && <Login path='/login' onLogin={() => updateAuth()} />}
               {!isAuth && <Redirect from='/profile' to='/' />}
-              {!isAuth && <Redirect from='/profile/*' to='/' />}
-              <UserContainer path='/profile'>
+              {isAuth && <Redirect from='/profile' to='/profile/user_info' />}
+              {isAuth && <UserContainer path='/profile'>
                 <Profile default path='/user_info' />
                 <MyRecipes path='/my_recipes' />
                 <Favs path='/favs' />
                 <Categories path='/categories' />
-              </UserContainer>
+              </UserContainer>}
             </Router>
           </Container>
       }
