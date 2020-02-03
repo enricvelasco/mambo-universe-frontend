@@ -7,12 +7,13 @@ const Provider = ({ children }) => {
   const userState = () => {
     getCurrentUser()
       .then((user) => {
-        console.log('UPDATE USER', user)
         setIsAuth(!!user)
         setUserInfo(user)
+        setIsLoadingHome(false)
       })
   }
 
+  const [isLoadingHome, setIsLoadingHome] = useState(true)
   const [userInfo, setUserInfo] = useState(null)
   const [isAuth, setIsAuth] = useState(() => {
     userState()
@@ -20,9 +21,9 @@ const Provider = ({ children }) => {
 
   const value = {
     isAuth,
+    isLoadingHome,
     userInfo,
     updateAuth: () => {
-      console.log('ENTRA A UPDATE AUTH')
       userState()
     }
   }

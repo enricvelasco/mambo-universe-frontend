@@ -1,13 +1,12 @@
 import React from 'react'
 import HomeTitle from './components/title'
-import Container from '../../components/common/container'
 
 const Home = () => {
   return (
-    <Container>
+    <div>
       <HomeTitle />
       HOME
-    </Container>
+    </div>
   )
 }
 
