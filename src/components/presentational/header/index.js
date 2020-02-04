@@ -21,7 +21,7 @@ const Header = () => {
       </LogoContainer>
       <ItemsContainer>
         <Menu>
-          <Item onClick={onItemClick}>Item 1</Item>
+          <LinkButton to='/' onClick={onItemClick}>Item 1</LinkButton>
           <Item onClick={onItem2Click}>Item 2</Item>
         </Menu>
         <UserAccessContainer>
