@@ -8,6 +8,7 @@ export const Link = styled(LinkRouter)`
   color: ${colors.lightText};
   padding: 12px;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   &:hover {
     opacity: 0.8;

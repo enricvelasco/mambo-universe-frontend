@@ -11,6 +11,8 @@ import Categories from '@Scenes/user-container/scenes/categories'
 import Header from '@Components/presentational/header'
 import Footer from '@Components/presentational/footer'
 import Container from '@Components/common/container'
+import Formulary from '@Scenes/user-container/scenes/my-recipes/formulary'
+import FormularyList from '@Components/presentational/formylary-list'
 import { Context } from './Context'
 
 const App = () => {
@@ -32,7 +34,10 @@ const App = () => {
               {isAuth &&
                 <UserContainer path='profile'>
                   <Profile default path='user_info' />
-                  <MyRecipes path='my_recipes' />
+                  <MyRecipes path='my_recipes'>
+                    <FormularyList default linkToNew='new' />
+                    <Formulary path='new' />
+                  </MyRecipes>
                   <Favs path='favs' />
                   <Categories path='categories' />
                 </UserContainer>}
