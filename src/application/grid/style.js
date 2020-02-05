@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { mediaQueries } from '../../styles/config/media-queries'
 
-const desktopSize = '800px';
-const mobileSize = '400px';
+const desktopSize = '800px'
+const mobileSize = '400px'
 
 export const Container = styled.div`
   width: 100%;

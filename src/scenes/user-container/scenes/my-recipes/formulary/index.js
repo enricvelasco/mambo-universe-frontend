@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 const Formulary = () => (
-    <div>
+  <div>
       Formulary!!!!!!!!!!!!!!!
-    </div>
-);
+  </div>
+)
 
-export default Formulary;
+export default Formulary

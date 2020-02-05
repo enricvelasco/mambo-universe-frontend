@@ -25,8 +25,7 @@ export const Grid = ({ colNumberDesktop, colNumberMobile, results }) => {
   )
 }
 
-
-/*export const Grid = ({ colNumberDesktop, colNumberMobile, results }) => {
+/* export const Grid = ({ colNumberDesktop, colNumberMobile, results }) => {
   const arrayDesktop = new Array(colNumberDesktop).fill(null)
   const arrayMobile = new Array(colNumberMobile).fill(null)
   return (
@@ -47,4 +46,4 @@ export const Grid = ({ colNumberDesktop, colNumberMobile, results }) => {
       ))}
     </Container>
   )
-}*/
+} */

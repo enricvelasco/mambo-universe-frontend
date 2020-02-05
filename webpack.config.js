@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   devServer: {
@@ -37,7 +37,7 @@ module.exports = {
       '@Components': path.resolve(__dirname, './src/components/'),
       '@Scenes': path.resolve(__dirname, './src/scenes/'),
       '@Services': path.resolve(__dirname, './src/services/'),
-      '@Styles': path.resolve(__dirname, './src/styles/'),
-    },
-  },
+      '@Styles': path.resolve(__dirname, './src/styles/')
+    }
+  }
 }

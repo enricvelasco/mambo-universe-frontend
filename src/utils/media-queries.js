@@ -3,10 +3,10 @@
  * @param mq
  * @return Boolean
  */
-const matchMQ = mq => window.matchMedia(mq).matches;
+const matchMQ = mq => window.matchMedia(mq).matches
 
-export const isMobile = () => matchMQ('(max-width: 639px)');
+export const isMobile = () => matchMQ('(max-width: 639px)')
 
-export const isTablet = () => matchMQ('(max-width: 995px)');
+export const isTablet = () => matchMQ('(max-width: 995px)')
 
-export const isDesktop = () => matchMQ('(min-width: 996px)');
+export const isDesktop = () => matchMQ('(min-width: 996px)')

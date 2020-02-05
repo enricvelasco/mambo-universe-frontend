@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      {!isAuth && showLogin && <Login onLogin={() => updateAuth()}/>}
+      {!isAuth && showLogin && <Login onLogin={() => updateAuth()} />}
       <LogoContainer>
         <Logo>Mambo Universe</Logo>
       </LogoContainer>
