@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { FaUser, FaRegUser } from 'react-icons/fa'
-import LinkButton from '../../common/link-button'
+import LinkButton from '@Components/common/link-button'
 import { Context } from '../../../Context'
 import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessContainer, Item } from './style'
 
