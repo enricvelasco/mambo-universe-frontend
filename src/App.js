@@ -10,12 +10,11 @@ import Favs from '@Scenes/user-container/scenes/favs'
 import Categories from '@Scenes/user-container/scenes/categories'
 import Header from '@Components/presentational/header'
 import Footer from '@Components/presentational/footer'
-import Login from '@Components/presentational/login'
 import Container from '@Components/common/container'
 import { Context } from './Context'
 
 const App = () => {
-  const { isAuth, updateAuth, isLoadingHome } = useContext(Context)
+  const { isAuth, isLoadingHome } = useContext(Context)
 
   return (
     <Suspense fallback={<div />}>
@@ -28,7 +27,6 @@ const App = () => {
             <Router>
               <NotFound default />
               <Home path='/' />
-              {!isAuth && <Login path='login' onLogin={() => updateAuth()} />}
               {!isAuth && <Redirect from='profile' to='/' />}
               {isAuth && <Redirect from='profile' to='/profile/user_info' />}
               {isAuth &&

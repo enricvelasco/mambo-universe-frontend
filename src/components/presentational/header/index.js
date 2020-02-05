@@ -1,6 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { FaUser, FaRegUser } from 'react-icons/fa'
+import { navigate } from '@reach/router'
 import LinkButton from '@Components/common/link-button'
+import Button from '@Components/common/button'
+import Login from '@Components/presentational/login'
 import { Context } from '../../../Context'
 import { HeaderContainer, LogoContainer, ItemsContainer, Logo, Menu, UserAccessContainer, Item } from './style'
 
@@ -11,11 +14,17 @@ const onItem2Click = () => {
 }
 
 const Header = () => {
-  const { isAuth } = useContext(Context)
+  const { isAuth, updateAuth } = useContext(Context)
+  const [showLogin, setShowLogin] = useState(false)
   const Icon = isAuth ? FaUser : FaRegUser
-  const link = isAuth ? '/profile' : '/login'
+
+  const handleClick = () => {
+    isAuth ? navigate('/profile') : setShowLogin(true)
+  }
+
   return (
     <HeaderContainer>
+      {!isAuth && showLogin && <Login onLogin={() => updateAuth()}/>}
       <LogoContainer>
         <Logo>Mambo Universe</Logo>
       </LogoContainer>
@@ -25,9 +34,9 @@ const Header = () => {
           <Item onClick={onItem2Click}>Item 2</Item>
         </Menu>
         <UserAccessContainer>
-          <LinkButton link={link}>
+          <Button onClick={handleClick}>
             <Icon size='22px' />
-          </LinkButton>
+          </Button>
         </UserAccessContainer>
       </ItemsContainer>
     </HeaderContainer>
