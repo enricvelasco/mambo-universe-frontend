@@ -1,11 +1,13 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
 
 module.exports = {
   devServer: {
     port: 9000
   },
   output: {
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -25,5 +27,17 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  resolve: {
+    // Enable importing JS files without specifying their's extension
+    extensions: ['.js', '.jsx'],
+    alias: {
+      // JS alias
+      '@Application': path.resolve(__dirname, './src/application/'),
+      '@Components': path.resolve(__dirname, './src/components/'),
+      '@Scenes': path.resolve(__dirname, './src/scenes/'),
+      '@Services': path.resolve(__dirname, './src/services/'),
+      '@Styles': path.resolve(__dirname, './src/styles/'),
+    },
+  },
 }
