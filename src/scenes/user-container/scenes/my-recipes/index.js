@@ -1,11 +1,12 @@
 import React from 'react'
+import { RecipesContainer } from '@Scenes/user-container/scenes/my-recipes/style'
 
 const MyRecipes = ({ children }) => {
   return (
-    <div>
+    <RecipesContainer>
       MY RECIPES
       {children}
-    </div>
+    </RecipesContainer>
   )
 }
 

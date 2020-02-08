@@ -1,12 +1,14 @@
 import React from 'react'
 import OptionsMenu from './compoents/options-menu'
-import { Content } from './style'
+import { Content, ChildrenContainer } from './style'
 
 const UserContainer = ({ children }) => {
   return (
     <Content>
       <OptionsMenu />
-      {children}
+      <ChildrenContainer>
+        {children}
+      </ChildrenContainer>
     </Content>
   )
 }
