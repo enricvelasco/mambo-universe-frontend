@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { Input } from './style'
 
 const TextInput = ({
- type = 'text',
- isRequired = false,
- name,
- title,
- isError = false,
- onChange
+  type = 'text',
+  isRequired = false,
+  name,
+  title,
+  isError = false,
+  onChange
 }) => {
   const [required, setRequired] = useState(isRequired)
 

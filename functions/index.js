@@ -1,6 +1,6 @@
 const functions = require('firebase-functions')
-const admin = require('firebase-admin');
-admin.initializeApp(functions.config().firestore);
+const admin = require('firebase-admin')
+admin.initializeApp(functions.config().firestore)
 
 const firestoreDB = admin.firestore()
 
@@ -13,20 +13,19 @@ const firestoreDB = admin.firestore()
 exports.onSaveRecipe = functions.firestore
   .document('recipes/{recipeId}')
   .onCreate((snap, context) => {
-    const ref = firestoreDB.collection('recipes').doc(context.params.recipeId);
+    const ref = firestoreDB.collection('recipes').doc(context.params.recipeId)
 
     return ref.set({
       creationDate: new Date()
-    }, {merge: true});
-  });
+    }, { merge: true })
+  })
 
 exports.onSaveIngredientsCategories = functions.firestore
   .document('ingredients_categories/{catId}')
   .onCreate((snap, context) => {
-    const ref = firestoreDB.collection('ingredients_categories').doc(context.params.catId);
+    const ref = firestoreDB.collection('ingredients_categories').doc(context.params.catId)
 
     return ref.set({
       creationDate: new Date()
-    }, {merge: true});
-  });
-
+    }, { merge: true })
+  })

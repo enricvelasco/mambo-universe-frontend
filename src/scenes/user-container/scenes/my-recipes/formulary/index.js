@@ -34,13 +34,13 @@ const Formulary = () => {
   return (
     <form onSubmit={onSaveData} autoComplete='off'>
       <InputContainer title='Nombre'>
-        <TextInput name='name' type='text' onChange={(text) => setName(text)}/>
+        <TextInput name='name' type='text' onChange={(text) => setName(text)} />
       </InputContainer>
       <InputContainer title='Descripcion'>
-        <TextInput name='description' type='text' onChange={(text) => setDescription(text)}/>
+        <TextInput name='description' type='text' onChange={(text) => setDescription(text)} />
       </InputContainer>
       <InputContainer title='TextArea'>
-        <InputTextArea onChange={(text)=>setTextArea(text)}/>
+        <InputTextArea onChange={(text) => setTextArea(text)} />
       </InputContainer>
       <SubmitButton text='Save' />
     </form>

@@ -44,7 +44,7 @@ const App = () => {
                   <Categories path='recipe_categories' />
                   <IngredientsCategories path='ingredients_categories'>
                     <FormularyList default linkToNew='new' />
-                    <IngredientsCategoriesFormulary path='new'/>
+                    <IngredientsCategoriesFormulary path='new' />
                   </IngredientsCategories>
                 </UserContainer>}
             </Router>

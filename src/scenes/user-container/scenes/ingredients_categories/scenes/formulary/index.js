@@ -30,11 +30,11 @@ const IngredientsCategoriesFormulary = () => {
   return (
     <form onSubmit={onSaveData} autoComplete='off'>
       <InputContainer title='Nombre'>
-        <TextInput name='name' type='text' onChange={(text) => setName(text)}/>
+        <TextInput name='name' type='text' onChange={(text) => setName(text)} />
       </InputContainer>
       <SubmitButton text='Save' />
     </form>
   )
 }
 
-export default IngredientsCategoriesFormulary;
+export default IngredientsCategoriesFormulary

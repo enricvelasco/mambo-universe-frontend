@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import { Container } from '@Scenes/user-container/scenes/ingredients_categories/style'
 
 const IngredientsCategories = ({ children }) => (
-    <Container>
+  <Container>
       INGREDIENTS CATEGORIES
-      {children}
-    </Container>
-);
+    {children}
+  </Container>
+)
 
-export default IngredientsCategories;
+export default IngredientsCategories
