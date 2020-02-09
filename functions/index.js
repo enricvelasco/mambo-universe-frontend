@@ -19,3 +19,14 @@ exports.onSaveRecipe = functions.firestore
       creationDate: new Date()
     }, {merge: true});
   });
+
+exports.onSaveIngredientsCategories = functions.firestore
+  .document('ingredients_categories/{catId}')
+  .onCreate((snap, context) => {
+    const ref = firestoreDB.collection('ingredients_categories').doc(context.params.catId);
+
+    return ref.set({
+      creationDate: new Date()
+    }, {merge: true});
+  });
+

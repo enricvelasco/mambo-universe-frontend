@@ -14,6 +14,8 @@ import Container from '@Components/common/container'
 import Formulary from '@Scenes/user-container/scenes/my-recipes/formulary'
 import FormularyList from '@Components/presentational/formylary-list'
 import { Context } from './Context'
+import IngredientsCategories from '@Scenes/user-container/scenes/ingredients_categories'
+import IngredientsCategoriesFormulary from '@Scenes/user-container/scenes/ingredients_categories/scenes/formulary'
 
 const App = () => {
   const { isAuth, isLoadingHome } = useContext(Context)
@@ -39,7 +41,11 @@ const App = () => {
                     <Formulary path='new' />
                   </MyRecipes>
                   <Favs path='favs' />
-                  <Categories path='categories' />
+                  <Categories path='recipe_categories' />
+                  <IngredientsCategories path='ingredients_categories'>
+                    <FormularyList default linkToNew='new' />
+                    <IngredientsCategoriesFormulary path='new'/>
+                  </IngredientsCategories>
                 </UserContainer>}
             </Router>
           </Container>
